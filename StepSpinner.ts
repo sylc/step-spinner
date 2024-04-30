@@ -13,19 +13,15 @@ import {
  * @returns an instance of a StepSpinner
  */
 export function step(message: string | SpinnerOptions): StepSpinner {
-  return new StepSpinner(message);
+  if (typeof message === "string") {
+    return new StepSpinner({ message });
+  } else {
+    return new StepSpinner(message);
+  }
 }
 
 export class StepSpinner extends Spinner {
-  // deno-lint-ignore constructor-super
-  constructor(msg: string | SpinnerOptions) {
-    if (typeof msg === "string") {
-      super({ message: msg });
-    } else {
-      super(msg);
-    }
-  }
-
+  
   #print(prefix: string, text?: string) {
     const txt = `${prefix} ${text ?? this.message}`;
     console.log(txt);

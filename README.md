@@ -7,6 +7,8 @@ predefined completion states.
 Example
 
 ```ts
+import { step } from "jsr:@sylc/step-spinner"
+
 const profile = step("Retrieving profile...").start();
 try {
   // do some stuff that takes time...
