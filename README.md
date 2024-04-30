@@ -21,7 +21,7 @@ try {
 
 ## Credits
 
-Inpsired by
+Inspired by the following projects
 
 - https://github.com/sindresorhus/ora?tab=readme-ov-file
 - https://deno.land/x/wait
