@@ -1,1 +1,1 @@
-export { StepSpinner } from "./StepSpinner.ts";
+export { StepSpinner, step } from "./StepSpinner.ts";
