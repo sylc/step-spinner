@@ -1,0 +1,15 @@
+{
+  "name": "@sylc/step-spinner",
+  "version": "0.0.1",
+  "exports": "./mod.ts",
+  "tasks": {
+    "test": "deno test -A",
+    "check": "deno fmt && deno lint"
+  },
+  "fmt": {
+    "exclude": ["CHANGELOG.md"]
+  },
+  "imports": {
+    "@std/cli": "jsr:@std/cli@^0.224.0"
+  }
+}
